@@ -29,9 +29,4 @@ export class CRecommendService {
     })
   }
 
-  getCropResult(){
-  return ({
-
-          })
-  }
 }

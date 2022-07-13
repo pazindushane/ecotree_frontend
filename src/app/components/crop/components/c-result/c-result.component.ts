@@ -24,7 +24,7 @@ export class CResultComponent implements OnInit {
   ngOnInit(): void {
     this.predictedCrop = this.cropData.find( ({ Name }) => Name === this.data.final_prediction)
     console.log("meka tmai title eka")
-    console.log(this.predictedCrop.children[0].title)
+    console.log(this.data)
     this.imgUrl = this.predictedCrop.children[0].imageUrl
     this.Title = this.predictedCrop.children[0].title
     this.Desc = this.predictedCrop.children[0].description

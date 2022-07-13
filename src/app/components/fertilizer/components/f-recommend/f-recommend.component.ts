@@ -62,8 +62,8 @@ export class FRecommendComponent implements OnInit {
       Nitrogen:'',
       Phosphorous:'',
       Potassium :'',
-      Temparature:this.cookieValues.current.temp_c,
-      Humidity:this.cookieValues.current.humidity,
+      Temparature:JSON.stringify(this.cookieValues.current.temp_c),
+      Humidity:JSON.stringify(this.cookieValues.current.humidity),
       Moisture:'',
       soil_type:'',
       crop_type:''

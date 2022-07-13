@@ -54,10 +54,10 @@ export class CRecommendComponent implements OnInit {
       N:'',
       P:'',
       K :'',
-      temperature:this.cookieValues.current.temp_c,
-      humidity:this.cookieValues.current.humidity,
+      temperature:JSON.stringify(this.cookieValues.current.temp_c),
+      humidity:JSON.stringify(this.cookieValues.current.humidity),
       ph:'',
-      rainfall:this.cookieValues.current.precip_mm,
+      rainfall:JSON.stringify(this.cookieValues.current.precip_mm),
     })
 
   }
